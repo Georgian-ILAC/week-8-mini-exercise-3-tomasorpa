@@ -1,11 +1,25 @@
 public class Person {
-    private  String firstName;
-    private  String lastName;
-    private double height;
 
-    public Person(String firstName, String lastName) {
+    protected String firstName;
+    protected String lastName;
+    protected double height;
+    protected long sin;
+    protected String nationality;
+    protected boolean hasChildren;
+    public Person(){
+        firstName="Tomas";
+        lastName="Ortega";
+        hasChildren=false;
+        nationality="Colombian";
+        sin=123456789;
+    }
+    public Person(String firstName, String lastName, double height, long sin, String nationality, boolean hasChildren) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.height = height;
+        this.sin = sin;
+        this.nationality = nationality;
+        this.hasChildren = hasChildren;
     }
 
     public String getFirstName() {
